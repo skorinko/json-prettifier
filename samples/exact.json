@@ -1,0 +1,10 @@
+{
+  "note": "Every number below has more digits than JavaScript keeps. JSON Prettifier shows them exactly as written; most viewers round them.",
+  "tweetId": 1793438100123456789,
+  "maxUint64": 18446744073709551615,
+  "beyondSafe": 9007199254740993,
+  "preciseRatio": 0.1000000000000000055511151231257827,
+  "pi": 3.14159265358979323846264338327950288,
+  "tooBig": 1e400,
+  "safe": 42
+}

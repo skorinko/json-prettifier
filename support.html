@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support · JSON Prettifier for Safari</title>
+  <meta name="description" content="How to turn on JSON Prettifier in Safari, how to use it, and answers to common questions.">
+  <link rel="icon" href="img/icon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="img/icon.png" alt="">JSON Prettifier</a>
+    <nav class="site-nav" aria-label="Main">
+      <a class="hide-sm" href="./#features">Features</a>
+      <a class="hide-sm" href="./#pricing">Pricing</a>
+      <a href="sample.json">Try it</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+<main class="page">
+  <h1>Support</h1>
+  <p class="lead">Turning it on, using it, and what to do when something doesn’t work.</p>
+
+  <h2>Turn it on: Mac</h2>
+  <ol>
+    <li>Open the JSON Prettifier for Safari app once. Its window shows whether the extension is on.</li>
+    <li>Click <strong>Quit and Open Safari Settings…</strong>, or in Safari choose <strong>Safari › Settings › Extensions</strong>.</li>
+    <li>Tick <strong>JSON Prettifier</strong>. It needs no access to your websites unless you turn on automatic formatting.</li>
+  </ol>
+
+  <h2>Turn it on: iPhone and iPad</h2>
+  <ol>
+    <li>Open <strong>Settings</strong>, then <strong>Apps</strong>, then <strong>Safari</strong>, then <strong>Extensions</strong>.</li>
+    <li>Tap <strong>JSON Prettifier</strong> and turn on <strong>Allow Extension</strong>.</li>
+  </ol>
+  <p>Then open a JSON address, such as the <a href="sample.json">sample document</a>, and try it.</p>
+
+  <h2>Use it</h2>
+  <ul>
+    <li><strong>Format a page:</strong> click the JSON Prettifier button in the Safari toolbar, then <strong>Format This Page</strong>, or press <kbd>⌃</kbd><kbd>⇧</kbd><kbd>J</kbd>. Do it again to see the page as it was. On iPhone and iPad, tap the page menu button beside the address, then <strong>JSON Prettifier</strong>, then <strong>Format This Page</strong>.</li>
+    <li><strong>Every JSON page by itself:</strong> in the toolbar button, turn on <strong>Format JSON pages automatically</strong>, and give it access to websites when Safari asks. Untick a site there to leave its pages as they are.</li>
+    <li><strong>Find:</strong> type in the search box, or press <kbd>/</kbd> or <kbd>⌘</kbd><kbd>F</kbd>. <kbd>Return</kbd> goes to the next match. The funnel button shows only the matches. Start with <code>$</code> for a JSONPath query, such as <code>$..price</code>.</li>
+    <li><strong>Copy:</strong> click a value: its path shows at the bottom, with <strong>Copy Path</strong> and <strong>Copy Value</strong>. <kbd>⌘</kbd><kbd>C</kbd> copies the value too. The copy button at the top copies the whole document, formatted or minified.</li>
+    <li><strong>Keys:</strong> arrows move and fold, <kbd>Return</kbd> folds, <kbd>E</kbd> and <kbd>C</kbd> expand and collapse everything, <kbd>1</kbd> to <kbd>9</kbd> open that many levels, <kbd>T</kbd>, <kbd>P</kbd> and <kbd>R</kbd> switch between Tree, Pretty and Raw. Option-click folds a whole branch.</li>
+    <li><strong>A file on your Mac, or JSON on a page:</strong> open the Scratchpad from the toolbar button, then paste, drop the file, or choose <strong>Open File…</strong>. On a Mac you can also select JSON on any page and choose <strong>Format Selection as JSON</strong> from the context menu.</li>
+  </ul>
+
+  <h2>Common questions</h2>
+  <h3>Nothing happens on a page</h3>
+  <p>Safari doesn’t let extensions into its own pages, such as Settings or the Start Page, or into files opened from disk; use the Scratchpad for those. On an ordinary web page, JSON Prettifier says the page isn’t JSON; select the JSON on it and try again.</p>
+  <h3>Safari downloads the file instead of showing it</h3>
+  <p>Some servers send JSON in a way Safari saves rather than shows, and no extension can change that. Open the downloaded file in the Scratchpad.</p>
+  <h3>A number looks different from another viewer</h3>
+  <p>JSON Prettifier shows numbers exactly as sent. Other viewers round numbers with more than about 16 digits, such as 64-bit IDs. A dotted underline marks such a number; hold the pointer over it to see what JavaScript would make of it.</p>
+  <h3>The page says the site stops extensions from reacting to clicks</h3>
+  <p>Some sites, such as raw files on GitHub, send a setting that keeps extensions from receiving clicks. There the document is shown as formatted text. For the full tree, save the page with File › Save As and open the file in the Scratchpad.</p>
+  <h3>The keyboard shortcut does nothing</h3>
+  <p>A website or another extension may use the same keys. Use the toolbar button instead, or change the shortcut in Safari’s settings, under Extensions.</p>
+  <h3>Safari asks to allow downloads from a long random name</h3>
+  <p>The first time you save a file from the Scratchpad, Safari asks whether to allow downloads from it, naming it by a long random string. That string is the extension’s own address on your device; allowing it is safe.</p>
+
+  <h2>Contact</h2>
+  <p>Questions, bugs or ideas: <span data-email><a href="mailto:extensions.support@icloud.com">extensions.support@icloud.com</a></span>. Please include the address of the page and what you expected to see.</p>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span data-year>2026</span> Dmitry Skorinko</span>
+    <nav aria-label="Footer"><a href="sample.json">Sample document</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+  </div>
+</footer>
+</body>
+</html>

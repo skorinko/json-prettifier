@@ -1,0 +1,6 @@
+{
+  "name": "Broken on purpose",
+  "items": [1, 2, 3],
+  "enabled": tru,
+  "comment": "JSON Prettifier shows the error above at line 4, column 14, and marks it in the text."
+}

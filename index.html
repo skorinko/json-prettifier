@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JSON Prettifier for Safari: readable JSON, exact to the last digit</title>
+  <meta name="description" content="A Safari extension for Mac, iPhone and iPad. Opens JSON as a tree you can fold, search and filter, with JSONPath, exact numbers, JSON Lines, and errors shown at their line and column. No data collected.">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121116" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="JSON Prettifier for Safari">
+  <meta property="og:description" content="JSON in Safari as a tree you can fold, search and filter. Exact to the last digit, fast on large files.">
+  <meta property="og:url" content="https://skorinko.github.io/json-prettifier/">
+  <meta property="og:image" content="https://skorinko.github.io/json-prettifier/img/og.jpg">
+  <link rel="canonical" href="https://skorinko.github.io/json-prettifier/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="img/icon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="img/icon.png" alt="">JSON Prettifier</a>
+    <nav class="site-nav" aria-label="Main">
+      <a class="hide-sm" href="#features">Features</a>
+      <a class="hide-sm" href="#pricing">Pricing</a>
+      <a class="hide-sm" href="#faq">FAQ</a>
+      <a href="sample.json">Try it</a>
+      <a href="support.html">Support</a>
+      <a class="btn btn-primary btn-small" href="#pricing">Get it</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <p class="eyebrow"><img src="img/icon.png" alt="">A Safari extension for Mac, iPhone and iPad</p>
+      <h1>JSON you can read, exact to the last digit.</h1>
+      <p class="lead">Open any JSON address in Safari and see a tree you can fold, search and filter, instead of a wall of text. Large documents open fast, numbers stay exactly as sent, and errors show where they are.</p>
+      <div class="cta">
+        <a class="btn btn-primary" data-buy="Buy on the App Store · €1.99" href="#pricing"><span data-buy-label>Coming soon to the App Store</span></a>
+        <a class="btn btn-ghost" href="sample.json">Open a sample document</a>
+      </div>
+      <p class="fine">€1.99 once, for Mac, iPhone and iPad · macOS 12 and iOS 16.4 or later · No data collected</p>
+
+      <div class="frame">
+        <div class="frame-bar">
+          <div class="frame-dots"><i></i><i></i><i></i></div>
+          <div class="frame-url">api.example.com/v1/users/1042</div>
+          <div class="frame-spacer"></div>
+        </div>
+        <img src="img/hero.jpg" width="2000" height="1250" alt="An API response shown as a tree, with a value selected and its path in the bar below">
+      </div>
+    </div>
+  </div>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Open, click, read</h2>
+        <p>No account, no setup, and no access to your websites unless you want it.</p>
+      </div>
+      <div class="trio">
+        <div class="tile"><div class="icon"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 4.5H8a2 2 0 0 0-2 2v3a2 2 0 0 1-2 2.5 2 2 0 0 1 2 2.5v3a2 2 0 0 0 2 2h.5M15.5 4.5h.5a2 2 0 0 1 2 2v3a2 2 0 0 0 2 2.5 2 2 0 0 0-2 2.5v3a2 2 0 0 1-2 2h-.5"/></svg></div><h3>1. Open JSON</h3><p>Any address that answers with JSON: an API, a file on GitHub, a config. Safari shows it as text.</p></div>
+        <div class="tile"><div class="icon"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 4 5 5-9.5 9.5H6v-4.5z"/></svg></div><h3>2. Format it</h3><p>Click JSON Prettifier in the toolbar, then Format This Page, or press ⌃⇧J. Or let it format every JSON page by itself.</p></div>
+        <div class="tile"><div class="icon"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg></div><h3>3. Find what you need</h3><p>Fold, search, filter and copy. Click a value to see its path, and copy either one.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="soft">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Made for the JSON you actually get</h2>
+        <p>Large, deeply nested, sometimes broken, and full of IDs that don’t fit in a double.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-copy">
+          <p class="kicker">Search</p>
+          <h3>Find anything, fast</h3>
+          <p>Every key and value is searched as you type, with each match marked. Step through them, or keep only the matches and the way to them.</p>
+          <ul class="ticks">
+            <li>Match case, or use a regular expression</li>
+            <li>JSONPath queries such as <code>$..book[?@.price &lt; 10].title</code></li>
+            <li>Searching never freezes the page, even on large documents</li>
+          </ul>
+        </div>
+        <div class="shot"><img src="img/2-search.jpg" width="2000" height="1250" alt="Search results marked in the tree, with only the matches shown" loading="lazy"></div>
+      </div>
+
+      <div class="feature flip">
+        <div class="feature-copy">
+          <p class="kicker">Exact</p>
+          <h3>Never loses a digit</h3>
+          <p>Most viewers read numbers the way JavaScript does, so <code>9007199254740993</code> quietly turns into <code>9007199254740992</code>. JSON Prettifier shows every number exactly as it was sent.</p>
+          <ul class="ticks">
+            <li>64-bit IDs, long decimals and huge exponents, digit for digit</li>
+            <li>Keys in the order the server wrote them</li>
+            <li>Repeated keys pointed out, with Document Info for counts and anything unusual</li>
+          </ul>
+        </div>
+        <div class="shot"><img src="img/3-exact.jpg" width="2000" height="1250" alt="Large numbers shown exactly, with a note saying so" loading="lazy"></div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-copy">
+          <p class="kicker">Errors</p>
+          <h3>Broken JSON, explained</h3>
+          <p>When a document isn’t valid, you see what’s wrong and where: the line and column, the line itself, and the whole text with the place marked.</p>
+          <ul class="ticks">
+            <li>JSON Lines, with unreadable lines shown in place</li>
+            <li>JSONP, and prefixes like <code>)]}'</code> that protect APIs</li>
+            <li>Comments and trailing commas read, with a copy as strict JSON</li>
+          </ul>
+        </div>
+        <div class="shot"><img src="img/4-error.jpg" width="2000" height="1250" alt="An invalid document with the error's line and column marked" loading="lazy"></div>
+      </div>
+
+      <div class="feature flip">
+        <div class="feature-copy">
+          <p class="kicker">Yours</p>
+          <h3>Your colors, your keys</h3>
+          <p>Light, dark or automatic, in four themes, at the text size you like. On a Mac, the keyboard does everything.</p>
+          <ul class="ticks">
+            <li>GitHub, Solarized, Dracula and Nord</li>
+            <li>Paths copied for JavaScript, JSONPath, jq or JSON Pointer</li>
+            <li>Arrows move and fold, / searches, 1 to 9 open that many levels</li>
+          </ul>
+        </div>
+        <div class="shot"><img src="img/5-dark.jpg" width="2000" height="1250" alt="The Dracula theme in dark appearance, with the settings open" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="details">
+    <div class="wrap">
+      <div class="section-head"><h2>And all the small things</h2></div>
+      <div class="grid">
+        <div class="tile"><div class="icon"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3>No website access</h3><p>It reads a page only when you ask, unless you turn on automatic formatting. No account, no analytics, nothing sent anywhere.</p></div>
+        <div class="tile"><div class="icon"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3 5 13.5h6L10 21l8-10.5h-6z"/></svg></div><h3>Fast on large files</h3><p>Only the rows on screen are drawn. A million-item array opens and scrolls smoothly.</p></div>
+        <div class="tile"><div class="icon"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><rect x="5.5" y="5" width="13" height="15.5" rx="2"/><path d="M9 5V3.5h6V5M9 11h6M9 14.5h4"/></svg></div><h3>Scratchpad</h3><p>Paste JSON, drop a file or open one. On a Mac, select JSON on any page and format it from the context menu.</p></div>
+        <div class="tile"><div class="icon"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="12" height="15" rx="2"/><rect x="15" y="9" width="6" height="11" rx="1.5"/></svg></div><h3>Mac, iPhone and iPad</h3><p>One purchase for all three, with a layout made for touch on the phone.</p></div>
+        <div class="tile"><div class="icon"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4.5h5.5V10M19.5 4.5 11 13"/><path d="M18 14v4.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6H10"/></svg></div><h3>Links and hints</h3><p>URLs are links, colors show a swatch, dates and Unix times show the date in your time zone, and JSON Web Tokens decode with a click.</p></div>
+        <div class="tile"><div class="icon"><svg class="line" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h9"/></svg></div><h3>Eleven languages</h3><p>English, German, French, Spanish, Italian, Portuguese, Japanese, Korean and Chinese.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="soft">
+    <div class="wrap">
+      <div class="price-card">
+        <img src="img/icon.png" alt="">
+        <h2>JSON Prettifier for Safari</h2>
+        <p class="price">€1.99 <small>once</small></p>
+        <ul class="ticks">
+          <li>One-time purchase, no subscription, no account</li>
+          <li>Mac, iPhone and iPad with one purchase</li>
+          <li>macOS 12 or later, iOS and iPadOS 16.4 or later, with Safari 16.4 or later</li>
+          <li>Every feature included</li>
+        </ul>
+        <div><a class="btn btn-primary" data-buy="Buy on the App Store" href="#pricing"><span data-buy-label>Coming soon to the App Store</span></a></div>
+        <p class="fine">Prices in other countries are set by the App Store.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head"><h2>Questions</h2></div>
+      <div class="faq">
+        <details>
+          <summary>Does it need access to the websites I visit?</summary>
+          <p>No. Safari lets JSON Prettifier into the current page only when you click its button or press its shortcut, and only for that page. If you turn on automatic formatting, Safari asks you for access to websites; JSON Prettifier then looks only at whether a page is JSON, and you can turn it off for any site.</p>
+        </details>
+        <details>
+          <summary>Why would a number change in other viewers?</summary>
+          <p>JavaScript keeps numbers as 64-bit floating point, which holds about 15 to 17 significant digits. A 64-bit ID like <code>9007199254740993</code> or <code>1793438100123456789</code> has more, so it is silently rounded when read the usual way. JSON Prettifier reads those numbers itself and shows the digits the server sent.</p>
+        </details>
+        <details>
+          <summary>How large a document can it open?</summary>
+          <p>Tens of megabytes. Only the rows on the screen are drawn, and searches run in small steps, so the page stays responsive. Safari itself has to load the text first, which takes a moment for very large files.</p>
+        </details>
+        <details>
+          <summary>Can I open a JSON file on my Mac?</summary>
+          <p>Safari doesn’t let extensions into files opened from disk, so use the Scratchpad: open it from the toolbar button, then drop the file on it or choose Open File.</p>
+        </details>
+        <details>
+          <summary>Which pages does it work on?</summary>
+          <p>Any address Safari shows as text: JSON, JSON Lines, JSONP and JSON sent as plain text. Some servers send JSON in a way Safari downloads instead of showing; open the downloaded file in the Scratchpad.</p>
+        </details>
+        <details>
+          <summary>What data does it collect?</summary>
+          <p>None. Read the <a href="privacy.html">privacy policy</a>.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span data-year>2026</span> Dmitry Skorinko</span>
+    <nav aria-label="Footer"><a href="sample.json">Sample document</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+{"time":"2026-11-01T10:00:00Z","level":"info","msg":"server started","port":8080}
+{"time":"2026-11-01T10:00:02Z","level":"info","msg":"request","method":"GET","path":"/v1/users/1042","ms":12}
+{"time":"2026-11-01T10:00:03Z","level":"warn","msg":"slow query","ms":812,"query":"SELECT * FROM projects"}
+{"time":"2026-11-01T10:00:04Z","level":"error","msg":"upstream timeout",
+{"time":"2026-11-01T10:00:05Z","level":"info","msg":"request","method":"POST","path":"/v1/projects","ms":48}
